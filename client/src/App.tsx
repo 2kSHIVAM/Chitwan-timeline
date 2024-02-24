@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, {useEffect} from 'react';
+import {useApi} from "./context/ApiContext";
+import {useMe} from "./context/MeContext";
+import {TMe} from "./types";
 function App() {
+  const {fetchData} = useApi()
+  const {me,updateMe} = useMe()
+  useEffect(() => {
+    fetchData({
+      url:'me',
+      method:'GET'
+    }).then((res) => {
+      updateMe((res as TMe).data as unknown as TMe)
+    })
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className={'text-white'}>{me.greeting}</div>
   );
 }
 
