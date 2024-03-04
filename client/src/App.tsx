@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import {useApi} from "./context/ApiContext";
 import {useMe} from "./context/MeContext";
 import {TMe} from "./types";
+import Main from "./components/Main";
+import {Route, Routes} from "react-router-dom";
 function App() {
   const {fetchData} = useApi()
   const {me,updateMe} = useMe()
@@ -14,7 +16,10 @@ function App() {
     })
   }, []);
   return (
-      <div className={'text-white'}>{me.greeting}</div>
+      <Routes>
+          <Route path={'/'} element={<Main/>}/>
+      </Routes>
+
   );
 }
 
