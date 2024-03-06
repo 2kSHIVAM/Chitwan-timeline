@@ -26,5 +26,5 @@ export const MeProvider = (props:{children:React.ReactNode}) => {
 export const useMe = () => {
     const context = React.useContext(MeContext)
     if(context !== undefined) return context
-    throw new Error("useMe moust be used within a MeProvider")
+    throw new Error("useMe must be used within a MeProvider")
 }
