@@ -17,6 +17,9 @@ module.exports = {
       },
       blur:{
         blob:'30px'
+      },
+      borderWidth:{
+        journeyTimeline: '1px'
       }
     },
   },
