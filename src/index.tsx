@@ -12,13 +12,13 @@ root.render(
     <AppWrapper>
         <div className={"grid w-screen relative min-h-screen bg-gray-50"}>
             <App/>
-            <section className={'grid blur-blob overflow-hidden w-full h-full absolute top-0 left-0'}>
-                <RandomBlob/>
-                <RandomBlob/>
-                <RandomBlob/>
-                <RandomBlob/>
-                <RandomBlob/>
-            </section>
+            {/*<section className={'grid blur-blob overflow-hidden w-full h-full absolute top-0 left-0'}>*/}
+            {/*    <RandomBlob/>*/}
+            {/*    <RandomBlob/>*/}
+            {/*    <RandomBlob/>*/}
+            {/*    <RandomBlob/>*/}
+            {/*    <RandomBlob/>*/}
+            {/*</section>*/}
         </div>
     </AppWrapper>
 );

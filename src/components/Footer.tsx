@@ -29,7 +29,7 @@ export default function Footer(){
             <nav className={'sm:ml-auto gap-4 grid grid-flow-row lg:grid-flow-col sm:gap-6'}>
                 {
                     FooterItems.navItems.map((item,index) => (
-                        <div className={'grid grid-flow-col gap-2 w-fit h-fit'}>
+                        <div key={index} className={'grid grid-flow-col gap-2 w-fit h-fit'}>
                             <div className={'grid place-items-center'}>
                                 <RenderNavIcon type={item.type} variant={item.variant}/>
                             </div>

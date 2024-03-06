@@ -9,19 +9,19 @@ export const FooterItems = {
             type:'twitter',
             link:'',
             title:'Twitter',
-            variant:'fill'
+            variant:'outline'
         },
         {
             type:'github',
             link:'',
             title:'Github',
-            variant:'fill'
+            variant:'outline'
         },
         {
             type:'linkedin',
             link:'',
             title: 'LinkedIn',
-            variant:'fill'
+            variant:'outline'
         }
     ]
 }
