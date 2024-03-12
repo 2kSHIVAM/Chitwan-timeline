@@ -1,4 +1,4 @@
-export const Landmark = [
+export const Landmarks = [
   {
     date: new Date('2023-12-13'),
     companyName: "Ori",
@@ -14,6 +14,19 @@ export const Landmark = [
 export const Milestones = [
   {
     date: new Date(),
-    content:[]
+    content:[
+      {
+        type:"link", // link etc.
+        metaData:{
+          link: "https://medium.com/@chitwan001/effortless-development-environment-setup-a-guide-to-global-configurations-e0fc65746cb6"
+        }
+      },
+      {
+        type:"link", // link etc.
+        metaData:{
+          link: "https://dev.to/rahulj9a/how-to-build-simple-link-preview-without-any-library-in-js-2j84"
+        }
+      }
+    ]
   }
 ]
